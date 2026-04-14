@@ -13,10 +13,12 @@ jobs:
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           port: 22
           script: |
-            pwd
-            ls -la
             cd ci-cd-nextjsserver
             git pull origin main
+            export NVM_DIR="$HOME/.nvm"
+            [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+            node -v
+            npm -v
             cd
             bash script.sh
 
