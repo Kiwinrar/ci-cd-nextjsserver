@@ -21,5 +21,4 @@ jobs:
             npm -v
             cd
             bash script.sh
-            bash pm2config.sh
 
