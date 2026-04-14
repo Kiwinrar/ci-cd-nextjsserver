@@ -15,4 +15,5 @@ jobs:
           script: |
             pwd
             ls -la
+            cd ci-cd-nextjsserver
             git pull origin main
