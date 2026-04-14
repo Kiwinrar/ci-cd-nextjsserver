@@ -15,4 +15,4 @@ jobs:
           script: |
             pwd
             ls -la
-            git clone https://github.com/Kiwinrar/ci-cd-nextjsserver.git
+            git pull origin main
