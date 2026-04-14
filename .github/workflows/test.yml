@@ -17,3 +17,7 @@ jobs:
             ls -la
             cd ci-cd-nextjsserver
             git pull origin main
+            npm install
+            npm audit fix
+            npm run dev
+
