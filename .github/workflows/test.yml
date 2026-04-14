@@ -11,5 +11,5 @@ jobs:
           host: 18.61.69.9
           username: ubuntu
           key: ${{ secrets.SSH_PRIVATE_KEY }}
-          port: 21
+          port: 22
           script: ./script.sh
